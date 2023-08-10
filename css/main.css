@@ -1,0 +1,271 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    height: 1000px;
+}
+.home{
+    width: 100%;
+    height: 100vh;
+    background-image:url(../img/ggg.jpeg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+}
+.home .layout{
+    width: 100%;
+    height: 100%;
+}
+.home .nav{
+    background-color: rgba(152, 107, 84, 0.845);
+    overflow: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.home .nav ul{
+list-style-type: none;
+display: flex;
+
+}
+.home .nav ul li {
+ margin: 0px;
+ margin-top: 11px;
+}
+
+.home .nav ul li a{
+    color:rgba(56, 28, 13, 0.845);
+    font-weight: bolder;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 10px  11px;
+}
+.home .nav .logo img{
+    width: 40px; 
+    margin-top: 1px;  
+}
+.home .caption{
+    background-color: transparent;
+    text-align: center;
+}
+.home .caption img{
+    width: 360px;
+    
+}
+.home .caption h1{
+    margin: 30px 0px ;
+    color: rgba(98, 54, 32, 0.845);
+    font-family:'Times New Roman', Times, serif;
+}
+.home .caption button{
+    width: 35%;
+    margin: 20px;
+    border-radius: 20px;
+    border: 1px solid rgb(100, 59, 8);
+    padding: 10px ;
+    color: rgb(141, 90, 29);
+    font-weight: bold;
+    cursor:pointer ;
+}
+.home .caption .btn1 a{
+    text-decoration: none;
+    color: rgb(141, 90, 29); 
+    font-size: 20px;
+}
+.home .caption .btn2 a{
+    text-decoration: none;
+    color: rgb(141, 90, 29); 
+    font-size: 20px;
+}
+.home .caption .btn1{
+    background-color:transparent;
+}
+.home .caption .btn2{
+    background-color: transparent;
+}
+
+
+
+/*=================== end home ===========*/
+
+#profile{
+    padding: 100px 0px;
+    width: 100%;
+    background-image: url(../img/ggg.jpeg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+#profile .profile_header{
+width: 30%;
+margin: auto;
+text-align: center;
+}
+#profile .profile_header h1{
+    font-size:30px;
+    font-family:system-ui,'Segoe UI' 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(141, 90, 29); 
+    font: bold;
+    border-right:4px solid  rgb(141, 90, 29); ;
+    border-left:4px solid  rgb(141, 90, 29); ;
+    border-radius: 20px;
+}
+#profile .profile_header .hr{
+    background-image: linear-gradient( rgb(141, 90, 29) , rgb(251, 245, 237)  ,  rgb(141, 90, 29) );
+    height: 5px;
+    border-radius: 50%;
+}
+
+/* ============ end profile header===========*/
+#profile .container{
+    width: 98%;
+    padding: 20pX 0PX;
+    margin: auto;
+
+}
+
+.row{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+ .profile{
+    margin: 20px 1px;
+    width: 28%;
+    height: 250px;
+    background-size: 100% 100%;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+ .profile img{
+    width: 100%;
+    height: 100%;
+}
+
+ .profile .caption{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.398);
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    position: absolute;
+    top: 100%;
+    right: 100%;
+    transition:all 0.5s;
+}
+.profile:hover .caption{
+    top: 0%;
+    right: 0%;
+    transform:rotate(360deg);
+}
+.profile.caption h1{
+    padding: 20px;
+    font-size: 30px;
+}
+.profile .caption p{
+    padding:0px 20px;
+    font-size: 20px;
+
+}
+.profile .caption button p{
+    color: rgb(255, 225, 183);
+    font-weight: bold;
+
+}
+.profile .caption button{
+width: 40%;
+ border-radius: 20px;
+ background-color: rgb(145, 111, 76);
+ color: white;
+ font-weight: bold;
+ padding: 5px;
+ border: 1px solid black;
+ cursor: pointer;
+}
+.profile .caption button a{
+    color: rgb(255, 225, 183);
+    font-weight: bold;
+
+}
+#profile .profile_header h2{
+    font-size:25px;
+    color: rgb(112, 70, 19); 
+    font: bold;
+    border-radius: 20px;
+    margin: 20px;
+}
+#profile .profile_header h2 i{ 
+    color: rgb(112, 70, 19); 
+}
+#profile .profile_header h2 a{ 
+    color: rgb(112, 70, 19); 
+
+}
+/* width */
+::-webkit-scrollbar {
+    width: 0px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+html{
+    scroll-behavior: smooth;
+}
+@media screen and (max-width: 400px) {
+    .topnav a {
+      float: none;
+      width: 100%;
+    }
+@media(max-width:400px){
+
+   .home .nav ul a {
+        float: none;
+        width: 100%;
+      }
+    }
+    .home.nav.logo img{
+        padding-left:40px ;
+    }
+    .home.caption img{
+        width:300px;  
+    }
+    .home.caption h1{
+        font-size: 25px;
+    }
+    .home.caption button{
+        width: 40%;
+    }
+    #profile .profile_header{
+        width: 90%;
+    }
+    #profile.profile{
+        width: 90%;
+    }
+    #profile .profile.caption p{
+        font-size: 15px;
+
+    }
+    #profile .profile.caption button{
+        width: 90%;
+        padding: 5px;
+    }
+
+
+
+
+}
